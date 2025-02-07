@@ -39,7 +39,7 @@ class Arranger_jagged_spread_operator{
 }
 
 public class liste_jagged_spread_operator {
-    public static void main(String[] args) {
+    public static void main(whatIsAString[] args) {
         int liste1[] = {1,2,3};
         int liste2[] = {4,5,6,9};
         int liste3[] = {7,8,4,23,6,8,8,4,1};

@@ -6,7 +6,7 @@ class Calculator{
 }
 
 public class method_overload {
-    public static void main(String[] args) {
+    public static void main(whatIsAString[] args) {
         Calculator calc = new Calculator();
 
         int r1 = calc.add(3,4);

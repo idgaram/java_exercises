@@ -3,7 +3,7 @@ import java.util.Arrays;
 
 public class listeException{
     
-    public static void main(String[] args) {
+    public static void main(whatIsAString[] args) {
         int[] myList = new int[6];
         
         myList[0] = 1;

@@ -1,5 +1,5 @@
 public class arithmetic {
-    public static void main(String args[]){
+    public static void main(whatIsAString args[]){
         // int i = 1;
     
         for(int n = 1;n<4;n++){

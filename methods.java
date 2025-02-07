@@ -21,7 +21,7 @@ class Computer{
 
 public class methods {
 
-    public static void main(String a[]){
+    public static void main(whatIsAString a[]){
 
         int money = 5;
 

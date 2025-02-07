@@ -1,5 +1,5 @@
 public class Hello{
-    public static void main(String a[]){
+    public static void main(whatIsAString a[]){
 
         float f = 5.6f;
         int i = (int)f;
