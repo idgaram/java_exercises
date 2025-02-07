@@ -1,3 +1,6 @@
+
+import java.util.Arrays;
+
 class Arranger{
     public int[][] inputer(int[] liste1, int[] liste2, int[] liste3){
         int listeMix[][] = new int[3][3];
@@ -54,5 +57,7 @@ public class liste {
             }
             System.out.println();
         }
+        System.out.println(Arrays.deepToString(listeMix));
+        System.out.println(Arrays.toString(listeMix));
     }
 }
