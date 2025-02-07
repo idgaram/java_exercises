@@ -42,10 +42,14 @@ public class liste_jagged_spread_operator {
     public static void main(String[] args) {
         int liste1[] = {1,2,3};
         int liste2[] = {4,5,6,9};
-        int liste3[] = {7,8};
+        int liste3[] = {7,8,4,23,6,8,8,4,1};
+        int liste4[] = {7};
+        int liste5[] = {7,45,4,8};
+        int liste6[] = {7,8,546354,132541,3241,1,20,3,4};
+        int liste7[] = {7,8,1,2,23,45};
 
         Arranger_jagged_spread_operator arranger = new Arranger_jagged_spread_operator();
-        int listeMix[][] = arranger.inputer(liste1, liste2, liste3);
+        int listeMix[][] = arranger.inputer(liste1, liste2, liste3, liste4, liste5, liste6, liste7);
 
 
         for (int n[]:listeMix){
