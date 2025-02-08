@@ -11,6 +11,9 @@ class Mobile2 {
     public static void show1(Mobile2 mob) {
         System.out.println("brand "+ mob.brand+ "\nprice "+mob.price+"\nname "+mob.name+"\n-------------");
     }
+    public static void showStatic() {
+        System.out.println("brand \nprice \nname \n-------------");
+    }
 }
 
 public class staticMethod{
@@ -25,8 +28,12 @@ public class staticMethod{
         mob2.price = 2000;
         mob2.name = "smart";
 
+        Mobile2 mobStatic = new Mobile2();
+
         Mobile2.show1(mob1);
         mob1.show();
         mob2.show();
+        Mobile2.showStatic();
+        mobStatic.showStatic();
     }
 }
