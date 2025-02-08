@@ -8,8 +8,8 @@ class Mobile2 {
         System.out.println("brand "+brand+"\nprice "+price+"\nname "+name+"\n-------------");
     }
 
-    public static void show1() {
-        System.out.println("testing static method");
+    public static void show1(Mobile2 mob) {
+        System.out.println("brand "+ mob.brand+ "\nprice "+mob.price+"\nname "+mob.name+"\n-------------");
     }
 }
 
@@ -25,7 +25,7 @@ public class staticMethod{
         mob2.price = 2000;
         mob2.name = "smart";
 
-        Mobile2.show1();
+        Mobile2.show1(mob1);
         mob1.show();
         mob2.show();
     }
