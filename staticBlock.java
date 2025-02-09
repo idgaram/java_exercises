@@ -31,13 +31,16 @@ class Mobile3 {
 }
 
 public class staticBlock{
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ClassNotFoundException{
+
         Mobile3 mob1 = new Mobile3();
-        mob1.brand = "Samsung";
-        mob1.price = 900;
+        Class.forName("Mobile3");
+
+        // mob1.brand = "Samsung";
+        // mob1.price = 900;
         // mob1.name = "smart";
 
-        Mobile3 mob2 = new Mobile3();
+        // Mobile3 mob2 = new Mobile3();
         // mob2.brand = "Apple";
         // mob2.price = 2000;
         // mob2.name = "smart";
