@@ -33,7 +33,7 @@ class Mobile3 {
 public class staticBlock{
     public static void main(String[] args) throws ClassNotFoundException{
 
-        Mobile3 mob1 = new Mobile3();
+        // Mobile3 mob1 = new Mobile3();
         Class.forName("Mobile3");
 
         // mob1.brand = "Samsung";
