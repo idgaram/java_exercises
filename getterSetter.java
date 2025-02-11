@@ -1,3 +1,7 @@
+
+import java.util.HashMap;
+import java.util.Map;
+
 class Human {
     int age;
     String name;
@@ -13,6 +17,14 @@ class Human {
     public void setName(String name) {
         this.name = name;
     }
+
+    public Map<String, Object> toMap(){
+        Map<String, Object> map = new HashMap<>();
+        map.put("age", this.age);
+        map.put("name", this.name);
+        return map;
+    }
+   
 
 
     
