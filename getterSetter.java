@@ -2,9 +2,27 @@
 import java.util.HashMap;
 import java.util.Map;
 
-class Human {
+class HumanGetterSetter {
     int age;
     String name;
+
+    // public Human(){
+    //     this.age = 0;
+    //     this.name = null;
+    // }
+
+    public HumanGetterSetter(){
+        this.age = 0;
+        this.name = null;
+
+    }
+
+    public HumanGetterSetter(int age, String name){
+        this.age = age;
+        this.name = name;
+
+    }
+
     public int getAge() {
         return age;
     }
@@ -33,6 +51,9 @@ class Human {
 
 public class getterSetter {
     public static void main(String[] args) {
-        
+        HumanGetterSetter human = new HumanGetterSetter();
+        human.age = 18;
+        human.name = "steven";
+        System.out.println(human.toMap());
     }
 }
