@@ -4,17 +4,17 @@ class constructorExample{
 
 
     public constructorExample(){
-        System.out.println("in constructor");
+        System.out.println("in default constructor");
         age = 18;
         name = "defaultName";
 
 
     }
 
-    public constructorExample(int age, String name){
+    public constructorExample(int a, String n){
         System.out.println("in constructor with values");
-        this.name = name;
-        this.age = age;
+        this.age = a;
+        this.name = n;
 
     }
 
@@ -22,14 +22,14 @@ class constructorExample{
     public int getAge() {
         return age;
     }
-    public void setAge(int age) {
-        this.age = age;
+    public void setAge(int a) {
+        this.age = a;
     }
     public String getName() {
         return name;
     }
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String n) {
+        this.name = n;
     }
 
     
