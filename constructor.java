@@ -3,6 +3,22 @@ class constructorExample{
     private String name;
 
 
+    public constructorExample(){
+        System.out.println("in constructor");
+        age = 18;
+        name = "defaultName";
+
+
+    }
+
+    public constructorExample(int age, String name){
+        System.out.println("in constructor with values");
+        this.name = name;
+        this.age = age;
+
+    }
+
+
     public int getAge() {
         return age;
     }
@@ -18,14 +34,16 @@ class constructorExample{
 
     
 }
-
+ 
 public class constructor {
     public static void main(String[] args) {
         constructorExample obj1 = new constructorExample();
+        constructorExample obj2 = new constructorExample(12, "sangohan");
+
 
         System.out.println(obj1.getName() + " : " + obj1.getAge());
-
-        obj1.setAge(18);
-        obj1.setName("sangohan");
+        System.out.println(obj2.getName() + " : " + obj2.getAge());
+        
+        
     }
 }
