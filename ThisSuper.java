@@ -13,15 +13,20 @@ class B extends A{
         super();
         System.out.println("in B");
     }
+    public B(int n){
+        this();
+        System.out.println("in B int : " + n);
+    }
     public B(int n, int m){
-        super(m);
+        super();
         System.out.println("in B int : " + n);
     }
 }
 
 public class ThisSuper {
     public static void main(String[] args) {
-        B b = new B(7, 5);
+        // B b = new B(7, 5);
+        B b = new B(7);
 
     }
 }
