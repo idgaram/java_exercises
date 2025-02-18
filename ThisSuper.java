@@ -1,27 +1,27 @@
-class A 
-{
-    public A()
-    {
-        System.out.println("in A");
-    }
-    public A(int n){
-        System.out.println("in A int : "  + n);
-    }
-}
-class B extends A{
-    public B(){
-        super();
-        System.out.println("in B");
-    }
-    public B(int n){
-        this();
-        System.out.println("in B int : " + n);
-    }
-    public B(int n, int m){
-        super();
-        System.out.println("in B int : " + n);
-    }
-}
+// class A 
+// {
+//     public A()
+//     {
+//         System.out.println("in A");
+//     }
+//     public A(int n){
+//         System.out.println("in A int : "  + n);
+//     }
+// }
+// class B extends A{
+//     public B(){
+//         super();
+//         System.out.println("in B");
+//     }
+//     public B(int n){
+//         this();
+//         System.out.println("in B int : " + n);
+//     }
+//     public B(int n, int m){
+//         super();
+//         System.out.println("in B int : " + n);
+//     }
+// }
 
 public class ThisSuper {
     public static void main(String[] args) {
