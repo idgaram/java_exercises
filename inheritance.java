@@ -11,10 +11,16 @@ class Calc {
 public class inheritance {
     public static void main(String[] args) {
         
-        Calc calc = new Calc();
-        int r1 = calc.add(1,3);
-        int r2 = calc.sub(3,1);
-
+        
+        
+        
+        AdvancedInheritance advanceCalc = new AdvancedInheritance();
+        int r1 = advanceCalc.add(2,3);
+        int r2 = advanceCalc.sub(2,3);
+        int r3 = advanceCalc.mult(2,3);
+        int r4 = advanceCalc.div(2,3);
+        
         System.out.println(r1 + " : " + r2);
+        System.out.println(r3 + " : " + r4);
     }
 }
