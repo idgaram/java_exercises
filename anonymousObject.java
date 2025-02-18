@@ -14,6 +14,9 @@ public class anonymousObject {
         // A a = new A();
         // a.show();
 
+        new A().show();
         new A();
+        
+       
     }
 }
