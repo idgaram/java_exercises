@@ -8,19 +8,32 @@ class Calc {
     }
 }
 
+class AdvancedInheritance extends Calc{
+
+
+    public int mult(int int1, int int2){
+        return int1 * int2;
+    }
+
+    public int div(int int1, int int2){
+        return int1/int2;
+    }
+
+
+}
+class VeryAdvancedCalculator extends AdvancedInheritance{
+
+
+    public int power(int int1, int int2){
+        return (int) Math.pow(int1, int2);
+    }
+}
 public class inheritance {
     public static void main(String[] args) {
-        
-        
-        
-        
-        AdvancedInheritance advanceCalc = new AdvancedInheritance();
-        int r1 = advanceCalc.add(2,3);
-        int r2 = advanceCalc.sub(2,3);
-        int r3 = advanceCalc.mult(2,3);
-        int r4 = advanceCalc.div(2,3);
-        
-        System.out.println(r1 + " : " + r2);
-        System.out.println(r3 + " : " + r4);
+
+        VeryAdvancedCalculator calc = new VeryAdvancedCalculator();
+        int r1 = calc.power(2, 3);
+        int r2 = calc.mult(2, 3);
+        System.out.println(r1 + " " + r2);
     }
 }
