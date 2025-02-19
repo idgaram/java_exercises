@@ -13,6 +13,7 @@ public class inheritance {
         System.out.println(r1 + " " + r2);
 
         OtherPackage obj = new OtherPackage();
+        System.out.println(obj.marks);
         
     }
 }
