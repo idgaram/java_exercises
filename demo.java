@@ -1,24 +1,36 @@
-import other.A;
-
-class C extends A{
-    public void showProtected(){
-        System.out.println(marks + " " + protectedMarks);
+class A {
+    public void show(){
+        System.out.println("in a show");
     }
 }
 
+class B extends A{
+    public void show(){
+        System.out.println("in b show");
+    }
+}
+
+class C extends A{
+    public void show(){
+        System.out.println("in c show");
+    }
+}
+
+
 public class demo {
     public static void main(String[] args) {
-        A obj1 = new A();
-        System.out.println(obj1.marks);
-        // System.out.println(obj1.protectedMarks); not accessible in other packages because of protected
-        obj1.show("in obj1");
+        A a = new B();
+        
+        a.show();
 
-        B obj2 = new B();
-        System.out.println(obj2.marks);
+        a = new A();
 
-        C obj3 = new C();
-        obj3.show("in obj3");
-        obj3.showProtected();
+        a.show();
 
-    }
+        a = new C();
+
+        a.show();
+
+
+       }
 }
