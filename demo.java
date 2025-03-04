@@ -1,25 +1,44 @@
-class Calc{
-   public final void show(){
-        System.out.println("by me");
+import java.lang.reflect.Field;
+
+class Laptop{
+    int price;
+    String model;
+
+    public void displayAllFields(){
+        Field[] fields = this.getClass().getDeclaredFields();
+        for (Field field : fields){
+            try {
+                System.out.println(field.getName() + " : " + field.get(this));
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            }
+        }
     }
-    public void add(int a, int b){
-        System.out.println(a + b);
+
+
+    public String toString(){
+        return model + " " + price ;
+    }
+
+    public boolean equals(Laptop that){
+return this.model.equals(that.model) && this.price == that.price;
     }
 }
-
-class AdvancedCalc extends Calc{
-    public void show(){
-        System.out.println("hey this isn't possible");
-    }
-}
-
 public class demo {
     public static void main(String[] args) {
-        // final int num = 8;
-        // num = 9;
-        Calc obj = new Calc();
-        obj.show();
-        obj.add(5, 5);
+        Laptop obj1 = new Laptop();
+        obj1.model = "lenovo yoga";
+        obj1.price = 1000;
 
+        Laptop obj2 = new Laptop();
+        obj2.model = "lenovo yoga";
+        obj2.price = 1000;
+
+        boolean result = obj1.equals(obj2);
+
+        System.out.println(result);
+   
+
+        // obj.displayAllFields();
        }
 }
