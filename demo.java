@@ -1,6 +1,6 @@
-final class Calc{
-    public void show(){
-        System.out.println("in calc show");
+class Calc{
+   public final void show(){
+        System.out.println("by me");
     }
     public void add(int a, int b){
         System.out.println(a + b);
@@ -8,7 +8,9 @@ final class Calc{
 }
 
 class AdvancedCalc extends Calc{
-
+    public void show(){
+        System.out.println("hey this isn't possible");
+    }
 }
 
 public class demo {
