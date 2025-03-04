@@ -16,6 +16,10 @@ class C extends A{
     }
 }
 
+class D{
+
+}
+
 
 public class demo {
     public static void main(String[] args) {
@@ -31,6 +35,7 @@ public class demo {
 
         a.show();
 
+        // a = new D(); not possible because d doesn't extend A
 
        }
 }
