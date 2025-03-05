@@ -17,10 +17,14 @@ public class demo {
        
         A obj1 = new B();
         obj1.show1();
-        
-        B obj2 =  new B();
+
+        B obj2 = (B) obj1;
         obj2.show1();
         obj2.show2();
+
+        // B obj2 =  new B();
+        // obj2.show1();
+        // obj2.show2();
 
        }
 }
